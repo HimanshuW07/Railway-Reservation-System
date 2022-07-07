@@ -1,0 +1,50 @@
+
+ <body class="bg">
+ <head>
+
+  </head>
+  <div class="Head">
+
+
+  <div class="container" style="background-color: rgb(142, 219, 199);">
+
+    <div class="row">
+        <div class="col-lg-9 col-sm-12 mt-5">
+            <input type="text" placeholder="Enter Source" class="form-control" name="trainFrom" [(ngModel)]="trainFrom">
+        </div>
+        <div class="col-lg-3 col-sm-12 mt-5">
+            <button type="button" class="btn btn-warning" (click) = "searchFrom()">Search</button>
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="mt-20">Availability</h2>
+        
+        <table class="table table-striped" style="width:80%" style="height:350px">
+            <thead style="color: darkolivegreen; background-color: lightblue;">
+                <tr>
+                    <th>Train No</th>
+                    <th>Train Name</th>
+                    <th>Train From</th>
+                    <th>Train To</th>
+                    <th>Fare</th>
+                    <th>Seats</th>
+                    <th>Date</th>
+                    <th>Time</th>         
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let train of trains">
+              <td>{{train.trainNo}}</td>
+              <td>{{train.trainName}}</td>
+              <td>{{train.trainFrom}}</td>
+              <td>{{train.trainTo}}</td>
+              <td>{{train.fare}}</td>
+              <td>{{train.seats}}</td>
+              <td>{{train.date}}</td>
+              <td>{{train.time}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- </body> -->

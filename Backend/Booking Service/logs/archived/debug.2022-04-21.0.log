@@ -1,0 +1,4 @@
+2022-04-21 13:15:34,137 INFO  BookController:33 - [] [postBooking] info booking
+2022-04-21 13:15:34,143 WARN  BookController:34 - [] [postBooking] warn booking
+2022-04-21 13:15:34,143 ERROR BookController:35 - [] [postBooking] error booking
+2022-04-21 13:15:34,144 DEBUG BookController:36 - [] [postBooking] debug booking

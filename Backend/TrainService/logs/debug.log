@@ -1,0 +1,16 @@
+2022-04-28 07:57:01,222 INFO  TrainController:45 - [] [postTrain] info train
+2022-04-28 07:57:01,233 WARN  TrainController:46 - [] [postTrain] warn train
+2022-04-28 07:57:01,233 ERROR TrainController:47 - [] [postTrain] error train
+2022-04-28 07:57:01,233 DEBUG TrainController:48 - [] [postTrain] debug train
+2022-04-28 07:57:07,024 INFO  TrainController:120 - [] [deleteTrain] info train
+2022-04-28 07:57:07,025 WARN  TrainController:121 - [] [deleteTrain] warn train
+2022-04-28 07:57:07,026 ERROR TrainController:122 - [] [deleteTrain] error train
+2022-04-28 07:57:07,027 DEBUG TrainController:123 - [] [deleteTrain] debug train
+2022-04-28 09:58:16,622 INFO  TrainController:45 - [] [postTrain] info train
+2022-04-28 09:58:16,634 WARN  TrainController:46 - [] [postTrain] warn train
+2022-04-28 09:58:16,634 ERROR TrainController:47 - [] [postTrain] error train
+2022-04-28 09:58:16,635 DEBUG TrainController:48 - [] [postTrain] debug train
+2022-04-28 09:58:24,922 INFO  TrainController:120 - [] [deleteTrain] info train
+2022-04-28 09:58:24,923 WARN  TrainController:121 - [] [deleteTrain] warn train
+2022-04-28 09:58:24,925 ERROR TrainController:122 - [] [deleteTrain] error train
+2022-04-28 09:58:24,925 DEBUG TrainController:123 - [] [deleteTrain] debug train

@@ -1,0 +1,37 @@
+<body style="background-color: rgb(178, 220, 178);">
+    <p stylestyle="margin-bottom: 10cm;"></p>
+
+    <h2 class="center">Book your Train</h2>
+    <div>
+        
+        <table class="table table-striped" style="width:70%" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <thead style="color: darkolivegreen; background-color: lightblue;">
+                <tr>
+                    <th>Train No</th>
+                    <th>Train Name</th>
+                    <th>Train From</th>
+                    <th>Train To</th>
+                    <th>Fare</th>
+                    <th>Seats Available</th>
+                    <th>Date</th>
+                    <th>Time</th>         
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let train of trains">
+              <td>{{train.trainNo}}</td>
+              <td>{{train.trainName}}</td>
+              <td>{{train.trainFrom}}</td>
+              <td>{{train.trainTo}}</td>
+              <td>{{train.fare}}</td>
+              <td>{{train.seats}}</td>
+              <td>{{train.date}}</td>
+              <td>{{train.time}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+    <hr>
+    <div class="container col-md-6" style="text-align:center;">
+        <a  routerLink="/trainbooking"><button class="btn btn-success" style="text-align:center;" > + add booking </button></a>

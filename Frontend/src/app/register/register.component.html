@@ -1,0 +1,44 @@
+<marquee width="100%" direction="left" height="25px" scrollamount="10" style="color: rgb(7, 7, 7); background-color: rgb(123, 196, 22); margin-bottom: auto; padding-top: 4px; font-size: 17px; word-spacing: 8px;">
+  WELCOME TO PAKISTAN RAILWAYS TRANSPORTATION  -  WE ARE AVAILABLE FOR 24*7  -  HAVE A HAPPY & SAFE JOURNEY
+</marquee>
+<body class="form" style="background-color:rgb(155, 197, 197)">
+<form [formGroup]="exform" (ngSubmit)= "onSubmit()"> 
+<br>
+
+  <h2>Registration Form</h2>
+  <br>
+    <div class="form-group" > 
+        <label> UserName:   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</label> 
+        <input formControlName="userName" type="text" class="mt-8" size="50" id="userName" 
+          [(ngModel)] = "register.userName" name="userName">  
+          <small *ngIf="exform.get('userName').invalid && exform.get('userName').touched" class="text-danger">UserName is Required</small>
+
+    </div> 
+  
+    <div class="form-group" > 
+        <label> UserFirstName: &nbsp; </label> 
+        <input formControlName="userFirstName" type="text" class="mt-2" size="50" id="userFirstName" 
+          [(ngModel)] = "register.userFirstName" name="userFirstName">  
+          <small *ngIf="exform.get('userFirstName').invalid && exform.get('userFirstName').touched" class="text-danger">UserFirstName is Required</small>
+
+    </div> 
+
+    <div class="form-group" > 
+        <label> UserLastName:  &nbsp;</label> 
+        <input type="text" class="mt-2" size="50" id="userLastName" 
+          [(ngModel)] = "register.userLastName" name="userLastName">  
+    </div> 
+
+    <div class="form-group" > 
+        <label> UserPassword:  &nbsp; </label> 
+        <input type="text" class="mt-2" size="50" id="userPassword" 
+          [(ngModel)] = "register.userPassword" name="userPassword">  
+    </div> 
+    <br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button [disabled]="exform.invalid"  class="btn btn-success" type="submit"> Submit </button> 
+<form>
+<hr>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="me-2" >Already have Account? </span> <a routerLink="/login" style="background-color:rgb(166, 180, 216)"> Login Here</a> 
+
+

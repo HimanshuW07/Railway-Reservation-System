@@ -1,0 +1,114 @@
+
+<body class="bg">
+    <div class="container col-md-6" >
+      <br>
+        <h2 style="color: rgb(0, 0, 0);" text-align= "center;" text-shadow= "0 0 3px #FF0000, 0 0 5px #0000FF;">Reservation Form</h2>
+    
+         <form [formGroup]="exform" (ngSubmit)="bookTrain()">
+           <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">TrainName</label>
+             
+             <input formControlName="trainName" type="text" class="form-control" id="trainName" name="trainName" [(ngModel)]="book.trainName">
+             <small *ngIf="exform.get('trainName').invalid && exform.get('trainName').touched" class="text-danger">TrainName is Required</small>
+           </div>
+    
+    
+  
+           <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">Fare</label>
+             <input formControlName="fare" type="fare" class="form-control" id="field" name="fare" [(ngModel)]="book.fare" >
+             <small *ngIf="exform.get('fare').invalid && exform.get('fare').touched" class="text-danger">Fare is Required</small>
+      </div>
+    
+    
+    
+           <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">From</label>
+             <input type="text" class="form-control" id="from" name="from" [(ngModel)]="book.from">
+           </div>
+    
+    
+    
+           <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">To</label>
+             <input type="text" class="form-control" id="to" name="to" [(ngModel)]="book.to" >
+           </div>
+    
+    
+    
+           <div class="mb-3">
+             <label for="exampleFormControlInput1" class="form-label">Depart</label>
+             <input type="date" class="form-control" id="depart" name="depart" [(ngModel)]="book.depart" >
+           </div>
+    
+    
+    
+           <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Back</label>
+            <input type="date" class="form-control" id="back" name="back" [(ngModel)]="book.back" >
+          </div>
+    
+    
+    
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Seats</label>
+            <input type="number" class="form-control" id="seats" name="seats"  min="1" max="10" step="1" [(ngModel)]="book.seats" >
+          </div>
+    
+    
+    
+          <div class="mb-3" style="background-color:rgb(196, 170, 222);"> 
+            <label for="exampleFormControlInput1" class="form-label">TravelClass</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="travelClass" id="first Class/1A" value="first Class/1A" [(ngModel)]="book.travelClass">
+              <label class="form-check-label" for="exampleRadios1">First Class/1A</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="travelClass" id="AC 2tier/2A" value="AC 2tier/2A" [(ngModel)]="book.travelClass">
+              <label class="form-check-label" for="exampleRadios2">
+                AC 2tier/2A
+              </label>
+            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id="AC 3tier/3A" value="AC 3tier/3A" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios3">
+              AC 3tier/3A
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id=" Executive class chair car/Economy Class" value=" Executive class chair car/Economy Class" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios4">
+              Executive class chair car/Economy Class
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id="AC Chair Car" value="AC Chair Car" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios5">
+              AC Chair Car
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id="Sleeper Class" value="Sleeper Class" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios6">
+              Sleeper Class
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id="Second Class" value="Second Class" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios7">
+              Second Class
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="travelClass" id="General" value="General" [(ngModel)]="book.travelClass">
+            <label class="form-check-label" for="exampleRadios8">
+              General
+            </label>
+          </div>
+          </div>
+         <button type="submit"  class="btn btn-success">Book My Train</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="reset" class="w3-button w3-teal" color="green">Clear from</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button routerLink="/payment" class="btn btn-info" color="green">Pay now</button>
+        <hr> 
+        </form>
+       </div>
+       </body>
+    

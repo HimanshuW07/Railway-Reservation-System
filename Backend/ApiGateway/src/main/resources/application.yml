@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: userModule
+          uri: http://localhost:9090/
+          predicates:
+            - Path=/user/**
+        - id: bookingModule
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/booking/**
+        - id: apiModule
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/api/**
+
